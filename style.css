@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@500&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.email {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 50px;
+    padding: 0px 70px;
+    background-color: #192a56;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.email i {
+    font-size: 20px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+nav {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 70px;
+
+}
+
+nav .logo {
+    font: bold 2em 'Roboto', sans-serif;
+    flex-basis: 30%;
+}
+
+nav .menu {
+    flex-basis: 70%;
+    text-align: right;
+}
+
+nav .menu a {
+    text-decoration: none;
+    color: gray;
+    padding: 10px 20px;
+    margin: 0px 15px;
+    font: 1em 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+nav .menu a:first-child,
+nav .menu a:hover {
+    color: black;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url('./images/sofa.jpg');
+    background-size: 100% 100%;
+    position: relative;
+    text-align: center;
+    padding-top: 7em;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font: bold 4em 'Courgette', cursive;
+    color: white;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+header button {
+    background: #192a56;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+header button:hover {
+    background: white;
+    color: #192a56;
+    border: 1px solid #192a56;
+}
+
+#services {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#services>div {
+    width: 20%;
+    text-align: center;
+}
+
+#services>div img {
+    width: 50%;
+}
+
+#services>div p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: gray;
+}
+
+#quality {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.02);
+}
+
+#quality>div {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+#quality>div img {
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 2px 3px 5px gray;
+}
+
+#quality p {
+    font: 20px sans-serif;
+    margin-top: 10px;
+    color: black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#featured {
+    padding: 50px 100px;
+    background-color: #192a56;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+
+#featured h1 {
+    text-align: center;
+    font: 2em 'Courgette', 'cursive';
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.featured-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.featured-left-col {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.featured-left-col img {
+    width: 70%;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.featured-right-col {
+    flex-basis: 60%;
+}
+
+.featured-right-col h2 {
+    font: bold 30px sans-serif;
+}
+
+.featured-right-col p {
+    font: 20px 'Roboto', sans-serif;
+    margin: 20px 0px;
+}
+
+.featured-right-col button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 5px;
+}
+
+#wave {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#testimonials {
+    padding: 50px 100px;
+    width: 100%;
+}
+
+#testimonials h1,
+#contact h1 {
+    text-align: center;
+    font: bold 3em 'Courgette', cursive;
+    margin-bottom: 1em;
+}
+
+#testimonials h1 span,
+#contact h1 span {
+    color: #192a56;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide p {
+    background-color: #192a56;
+    color: white;
+    font: 2em 'Roboto', sans-serif;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+
+
+}
+
+#contact {
+    padding: 50px 100px;
+    width: 100%;
+    height: 100vh;
+}
+
+.contact-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.contsct-left-col {
+    flex-basis: 50%;
+}
+
+.contsct-left-col iframe {
+    border-radius: 8px;
+    width: 600px;
+    height: 450px;
+}
+
+.contsct-right-col {
+    flex-basis: 40%;
+}
+
+.contsct-right-col h2 {
+    text-align: center;
+    margin: 1em 0;
+    font: bold 2em 'Courgette', cursive;
+
+}
+
+.contsct-right-col form input[type="text"],
+.contsct-right-col form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contsct-right-col form button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #192a56;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+footer {
+    padding: 50px 100px;
+    background-color: #192a56;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+footer h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    align-self: baseline;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 0px 20px;
+    }
+
+    nav .logo {
+        font: bold 1em 'Roboto', sans-serif;
+        flex-basis: 10%;
+    }
+
+    nav .menu {
+        flex-basis: 90%;
+    }
+
+
+    #contact {
+        height: max-content;
+    }
+
+    .contact-row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer h3 {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+    .email {
+        height: max-content;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .email p i {
+        margin: 10px;
+    }
+
+    nav {
+        height: max-content;
+        padding: 20px;
+    }
+
+    nav .menu {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .swiper-slide {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .swiper-slide p {
+        font: 1em 'Roboto', sans-serif;
+        padding: 0;
+    }
+
+    #contact {
+        padding: 5px;
+    }
+
+    .contsct-left-col iframe {
+        border-radius: 8px;
+        width: 80vw;
+        height: 100vw;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .email p {
+        line-height: 30px;
+    }
+
+    nav .menu a {
+        font-size: 10px;
+    }
+
+    header {
+        height: 70vh;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    #services {
+        display: none;
+    }
+
+    #quality {
+        padding: 50px 10px;
+    }
+
+    #quality p {
+        font-size: 10px;
+    }
+
+    #featured {
+        padding: 50px 10px;
+        height: fit-content;
+    }
+
+    .featured-row {
+        flex-direction: column;
+    }
+
+    #testimonials h1,
+    #contact h1 {
+        font-size: 2em;
+    }
+
+    .contact-row {
+        width: 90vw;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
